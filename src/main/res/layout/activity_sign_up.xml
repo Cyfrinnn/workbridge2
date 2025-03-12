@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#000000"
+    tools:context=".SignUpActivity">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/logowb" />
+
+    <!-- Sign-Up Options -->
+    <LinearLayout
+        android:id="@+id/signup_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_applicant"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/for_btn"
+            android:text="Applicant"
+            android:textColor="#000"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_employer"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/for_btn"
+            android:text="Employer"
+            android:textColor="#000"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+    <!-- Applicant Fields -->
+    <EditText
+        android:id="@+id/et_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/signup_options"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="name"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_applicant_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_full_name"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="emailAddress"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_applicant_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_applicant_email"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="password"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_applicant_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_applicant_password"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="password"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight"
+        android:visibility="gone" />
+
+    <!-- Employer Fields -->
+    <EditText
+        android:id="@+id/et_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/signup_options"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="name"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Company Name"
+        android:inputType="text"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight" />
+
+    <EditText
+        android:id="@+id/et_employer_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_company_name"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="emailAddress"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight" />
+
+    <EditText
+        android:id="@+id/et_employer_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_employer_email"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="password"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Create Password"
+        android:inputType="textPassword"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight" />
+
+    <EditText
+        android:id="@+id/et_employer_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_employer_password"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="password"
+        android:backgroundTint="@color/colorTextLight"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorTextLight" />
+
+    <!-- Sign-Up Button -->
+    <Button
+        android:id="@+id/btn_signup"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_applicant_confirm_password"
+        android:layout_marginTop="40dp"
+        android:background="#FCD42D"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:visibility="visible" />
+
+    <!-- Login TextView -->
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:text="Already have an account? Log in"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

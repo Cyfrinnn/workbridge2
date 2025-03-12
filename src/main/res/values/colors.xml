@@ -1,0 +1,13 @@
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBackground">#f5f5f5</color>
+    <color name="colorTextDark">#333333</color>
+    <color name="colorTextLight">#777777</color>
+    <color name="colorButton">#FFFF00</color>
+    <color name="colorButtonText">#000000</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFD700</color>
+    <color name="white">#FFFFFF</color>
+</resources>
